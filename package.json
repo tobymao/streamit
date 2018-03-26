@@ -1,0 +1,35 @@
+{
+  "name": "streamit",
+  "version": "0.1.0",
+  "description": "Web based distributed live streaming.",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development --content-base views --hot --host 0.0.0.0 --config ./webpack.config.js",
+    "watch": "webpack --mode development --progress --colors --watch --config ./webpack.config.js",
+    "test": "karma start --reporters html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobymao/streamit.git"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobymao/streamit/issues"
+  },
+  "homepage": "https://github.com/tobymao/streamit#readme"
+}
